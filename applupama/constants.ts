@@ -26,10 +26,11 @@ const excursionsEnglishGuideUrl = 'https://drive.google.com/file/d/1-NZvs1KkbP0R
 const excursionsPortugueseGuideUrl = 'https://drive.google.com/file/d/1I6dUuMnab5uCbXzx1S6Yt1cNJw6_esKr/preview';
 const giftShopCatalogUrl = 'https://drive.google.com/file/d/1tMHT7_1Ahw_W8oCNPpqL9iLi4HBlyLK9/preview';
 const restaurantMenuUrl = 'https://drive.google.com/file/d/1l4A39yb0cT7tcn5CqgX14m56fMdhWRDu/preview';
+const ecosDelHieloLogoUrl = `${cdnUrlPrefix}calafate%20reservas%20logo%20slogan-08.png`;
 
 const excursionButtonClassName = "w-full max-w-xs h-20 flex items-center justify-center text-center bg-cyan-600 text-white px-4 rounded-lg font-semibold hover:bg-cyan-700 transition-colors duration-300";
 
-const excursionsButtons = React.createElement('div', { className: "flex flex-col items-center space-y-3 mt-6" },
+const excursionsButtons = React.createElement('div', { className: "flex flex-col items-center space-y-3" },
   React.createElement('a', { href: excursionsSpanishGuideUrl, target: "_blank", rel: "noopener noreferrer", className: excursionButtonClassName }, 'Guía de Excursiones en Español'),
   React.createElement('a', { href: excursionsEnglishGuideUrl, target: "_blank", rel: "noopener noreferrer", className: excursionButtonClassName }, 'Excursions Guide in English'),
   React.createElement('a', { href: excursionsPortugueseGuideUrl, target: "_blank", rel: "noopener noreferrer", className: excursionButtonClassName }, 'Guia de Excursões em Português')
@@ -125,7 +126,18 @@ export const ALL_TRANSLATIONS: Record<Language, Translations> = {
       [CardID.Excursions]: {
         title: 'Excursiones en El Calafate',
         text: React.createElement(React.Fragment, null,
-          React.createElement('p', null, 'Descubre la magia de la Patagonia. Ofrecemos asesoramiento y reserva para todas las excursiones disponibles. ¡Prepárate para una aventura inolvidable!'),
+          React.createElement('p', { className: "mb-4" }, 'Descubre la magia de la Patagonia. Ofrecemos asesoramiento y reserva para todas las excursiones disponibles. ¡Prepárate para una aventura inolvidable!'),
+          React.createElement('img', { src: ecosDelHieloLogoUrl, alt: 'Ecos del Hielo Logo', className: 'w-56 mx-auto mb-2' }),
+          React.createElement('div', { className: "my-6 p-4 bg-gray-100 rounded-lg text-left sm:text-center" },
+            React.createElement('p', { className: "mb-2 text-gray-700" }, 'Para informacion de excursiones y tarifas, los invitamos a acceder a esta web:'),
+            React.createElement('a', {
+              href: 'https://www.ecosdelhielo.com/',
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "text-cyan-600 font-bold hover:underline break-all"
+            }, 'https://www.ecosdelhielo.com/')
+          ),
+          React.createElement('h3', { className: "text-xl font-bold text-gray-800 mt-6 mb-2" }, 'Guias de excursiones'),
           excursionsButtons
         ),
       },
@@ -255,7 +267,18 @@ export const ALL_TRANSLATIONS: Record<Language, Translations> = {
       [CardID.Excursions]: {
         title: 'Excursions in El Calafate',
         text: React.createElement(React.Fragment, null,
-          React.createElement('p', null, 'Discover the magic of Patagonia. We offer advice and booking for all available excursions. Get ready for an unforgettable adventure!'),
+          React.createElement('p', { className: "mb-4" }, 'Discover the magic of Patagonia. We offer advice and booking for all available excursions. Get ready for an unforgettable adventure!'),
+          React.createElement('img', { src: ecosDelHieloLogoUrl, alt: 'Ecos del Hielo Logo', className: 'w-56 mx-auto mb-2' }),
+           React.createElement('div', { className: "my-6 p-4 bg-gray-100 rounded-lg text-left sm:text-center" },
+            React.createElement('p', { className: "mb-2 text-gray-700" }, 'For information on excursions and rates, we invite you to visit this website:'),
+            React.createElement('a', {
+              href: 'https://www.ecosdelhielo.com/',
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "text-cyan-600 font-bold hover:underline break-all"
+            }, 'https://www.ecosdelhielo.com/')
+          ),
+          React.createElement('h3', { className: "text-xl font-bold text-gray-800 mt-6 mb-2" }, 'Excursion Guides'),
           excursionsButtons
         ),
       },
@@ -385,7 +408,18 @@ export const ALL_TRANSLATIONS: Record<Language, Translations> = {
       [CardID.Excursions]: {
         title: 'Excursões em El Calafate',
         text: React.createElement(React.Fragment, null,
-          React.createElement('p', null, 'Descubra a magia da Patagônia. Oferecemos assessoria e reservas para todas as excursões disponíveis. Prepare-se para uma aventura inesquecível!'),
+          React.createElement('p', { className: "mb-4" }, 'Descubra a magia da Patagônia. Oferecemos assessoria e reservas para todas as excursões disponíveis. Prepare-se para uma aventura inesquecível!'),
+          React.createElement('img', { src: ecosDelHieloLogoUrl, alt: 'Ecos del Hielo Logo', className: 'w-56 mx-auto mb-2' }),
+          React.createElement('div', { className: "my-6 p-4 bg-gray-100 rounded-lg text-left sm:text-center" },
+            React.createElement('p', { className: "mb-2 text-gray-700" }, 'Para informações sobre excursões e tarifas, convidamos você a visitar este site:'),
+            React.createElement('a', {
+              href: 'https://www.ecosdelhielo.com/',
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "text-cyan-600 font-bold hover:underline break-all"
+            }, 'https://www.ecosdelhielo.com/')
+          ),
+          React.createElement('h3', { className: "text-xl font-bold text-gray-800 mt-6 mb-2" }, 'Guias de Excursões'),
           excursionsButtons
         ),
       },
