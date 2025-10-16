@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Language } from '../types';
 
@@ -32,7 +33,7 @@ export const Header: React.FC<HeaderProps> = ({ currentLanguage, setLanguage }) 
       <div className="flex-1"></div>
       <div className="flex-1 flex justify-center">
         <img 
-          src="https://github.com/recepcionlupama-dot/huespedesinhouse-app/blob/main/imagenes/logo_lupama.png?raw=true" 
+          src="https://cdn.jsdelivr.net/gh/recepcionlupama-dot/huespedesinhouse-app@main/imagenes/logo_lupama.png" 
           alt="Hostería Lupama Logo" 
           className="h-20 object-contain"
         />

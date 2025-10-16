@@ -2,19 +2,21 @@
 import React from 'react';
 import { Language, CardID, CardType, type CardInfo, type Translations } from './types';
 
+const cdnUrlPrefix = 'https://cdn.jsdelivr.net/gh/recepcionlupama-dot/huespedesinhouse-app@main/imagenes/';
+
 export const CARDS_DATA: CardInfo[] = [
-  { id: CardID.Breakfast, type: CardType.Image, content: 'https://github.com/recepcionlupama-dot/huespedesinhouse-app/blob/main/imagenes/IMG_4222.jpg?raw=true' },
-  { id: CardID.Pool, type: CardType.Image, content: 'https://github.com/recepcionlupama-dot/huespedesinhouse-app/blob/main/imagenes/pile_32323.jpg?raw=true' },
-  { id: CardID.Wifi, type: CardType.Image, content: 'https://github.com/recepcionlupama-dot/huespedesinhouse-app/blob/main/imagenes/wifi-compu.jpg?raw=true' },
-  { id: CardID.Restaurant, type: CardType.Image, content: 'https://raw.githubusercontent.com/recepcionlupama-dot/huespedesinhouse-app/main/imagenes/image.png' },
-  { id: CardID.LunchBox, type: CardType.Image, content: 'https://github.com/recepcionlupama-dot/huespedesinhouse-app/blob/main/imagenes/IMG_61612.jpg?raw=true' },
-  { id: CardID.Excursions, type: CardType.Image, content: 'https://github.com/recepcionlupama-dot/huespedesinhouse-app/blob/main/imagenes/MORENO.jpg?raw=true' },
+  { id: CardID.Breakfast, type: CardType.Image, content: `${cdnUrlPrefix}IMG_4222.jpg` },
+  { id: CardID.Pool, type: CardType.Image, content: `${cdnUrlPrefix}pile_32323.jpg` },
+  { id: CardID.Wifi, type: CardType.Image, content: `${cdnUrlPrefix}wifi-compu.jpg` },
+  { id: CardID.Restaurant, type: CardType.Image, content: `${cdnUrlPrefix}image.png` },
+  { id: CardID.LunchBox, type: CardType.Image, content: `${cdnUrlPrefix}IMG_61612.jpg` },
+  { id: CardID.Excursions, type: CardType.Image, content: `${cdnUrlPrefix}MORENO.jpg` },
 ];
 
 export const GIFT_SHOP_CARD_DATA: CardInfo = {
   id: CardID.GiftShop,
   type: CardType.Image,
-  content: 'https://github.com/recepcionlupama-dot/huespedesinhouse-app/raw/main/imagenes/IMG_9640.JPG'
+  content: `${cdnUrlPrefix}IMG_9640.JPG`
 };
 
 const whatsAppOrderLink = "https://wa.me/5491150030084?text=Hola,%20quisiera%20encargar%20una%20vianda.";

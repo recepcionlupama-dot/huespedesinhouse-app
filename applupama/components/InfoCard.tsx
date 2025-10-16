@@ -20,6 +20,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({ title, type, content, onClic
         <img 
           src={content} 
           alt={title} 
+          loading="lazy"
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
       )}
